@@ -2,12 +2,12 @@
     padding-top: 94px;
 }
 
-.benefits__list {
+.wrapper__list {
     display: flex;
     gap: 30px;
 }
 
-.benefits__wrap {
+.wrapper__inner {
     @extend %flex-align;
     justify-content: center;
     width: 270px;
@@ -17,16 +17,16 @@
     margin-bottom: 30px;
 }
 
-.benefits__icons {
+.wrapper__icons {
     width: 70px;
     height: 70px;
 }
 
-.benefits__subtitle {
+.wrapper__subtitle {
     @include font ($fs: 14, $lh: 1.14)
 }
 
-.benefits__text {
+.wrapper__text {
     margin-top: 10px;
     color: var(--title-text-color);
     letter-spacing: 0.03em;

@@ -96,7 +96,7 @@ ul {
   --timeng-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-politic-check2, .modal-politic-label, .clients__link, .benefits__wrap, .navigation__list, .navigation, .header .container, .social__link, .social {
+.modal-politic-check2, .modal-politic-label, .clients__link, .wrapper__inner, .navigation__list, .navigation, .header .container, .social__link, .social {
   display: flex;
   align-items: center;
 }
@@ -304,12 +304,12 @@ ul {
   padding-top: 94px;
 }
 
-.benefits__list {
+.wrapper__list {
   display: flex;
   gap: 30px;
 }
 
-.benefits__wrap {
+.wrapper__inner {
   justify-content: center;
   width: 270px;
   height: 120px;
@@ -318,19 +318,19 @@ ul {
   margin-bottom: 30px;
 }
 
-.benefits__icons {
+.wrapper__icons {
   width: 70px;
   height: 70px;
 }
 
-.benefits__subtitle {
+.wrapper__subtitle {
   font-size: fspx;
   font-weight: fw;
   line-height: lh;
   letter-spacing: lsem;
 }
 
-.benefits__text {
+.wrapper__text {
   margin-top: 10px;
   color: var(--title-text-color);
   letter-spacing: 0.03em;
@@ -377,23 +377,23 @@ ul {
   margin-bottom: 30px;
 }
 
-.team__list {
+.card__list {
   display: flex;
   gap: 30px;
 }
 
-.team__item {
+.card__item {
   background-color: var(--primary-white-color);
   width: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team__item > img {
+.card__item > img {
   width: 270px;
   margin-bottom: 30px;
 }
 
-.team__name {
+.card__name {
   margin-bottom: 10px;
   font-size: fspx;
   font-weight: fw;
@@ -402,7 +402,7 @@ ul {
   text-align: center;
 }
 
-.team__text {
+.card__text {
   font-size: fspx;
   font-weight: fw;
   line-height: lh;
