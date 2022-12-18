@@ -1,0 +1,87 @@
+.header {
+    border-bottom: 1px solid var(--header-line-color);
+    & .container {
+        @extend %flex-align;
+    }
+}
+
+.navigation {
+    @extend %flex-align;
+}
+
+.navigation__list {
+    @extend %flex-align;
+    margin-left: auto;
+    gap: 50px;
+}
+
+.navigation__link {
+    position: relative;
+    padding: 32px 0;
+    color: var(--primary-text-color);
+    transition: color 250ms var(--timeng-function);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.current {
+    color: var(--accent-color);
+    &::after {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+    }
+}
+
+.contacts__list {
+    display: flex;
+    margin-left: 318px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contacts__list>li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.contacts__link {
+    color: var(--title-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms var(--timeng-function);
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+    color: var(--accent-text-color);
+}
+
+
+.mail-icons {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.tel-icons {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}

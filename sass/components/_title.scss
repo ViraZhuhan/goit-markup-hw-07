@@ -1,0 +1,6 @@
+.title {
+    display: block;
+    margin-bottom: 50px;
+    text-align: center;
+    @include font ();
+}

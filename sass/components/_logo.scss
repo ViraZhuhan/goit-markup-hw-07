@@ -1,0 +1,24 @@
+.logo {
+    display: block;
+    font-family: Raleway, sans-serif;
+    @include font (26, 1.19);
+    text-decoration: none;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    transition: color 250ms var(--timeng-function);
+}
+
+.logo--dark-color {
+    color: var(--primary-logo-color);
+}
+
+.logo--light-color {
+    color: var(--primary-white-color);
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.logo__span {
+    color: var(--accent-color);
+}
