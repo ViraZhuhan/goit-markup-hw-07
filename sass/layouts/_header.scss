@@ -47,10 +47,9 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-
-.contacts__list>li:not(:last-child) {
+    &>li:not(:last-child) {
     margin-right: 30px;
+}
 }
 
 .contacts__link {
@@ -62,15 +61,12 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-
     transition: color 250ms var(--timeng-function);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
 }
-
-.contacts__link:hover,
-.contacts__link:focus {
-    color: var(--accent-text-color);
 }
-
 
 .mail-icons {
     width: 16px;
