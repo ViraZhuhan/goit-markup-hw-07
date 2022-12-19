@@ -15,51 +15,36 @@
     margin-right: 93px;
 }
 
+.address-wrap>li:not(:last-child) {
+    margin-bottom: 9px;
+}
 
 
-.address,
-.contacts {
+.address-wrap__address,
+.address-wrap__contacts {
     display: block;
     color: var(--primary-white-color);
     font-style: normal;
     text-decoration: none;
     @include font ($fs:14, $fw:400, $lh:1.71);
     transition: color 250ms var(--timeng-function);
-.address:hover,
-.address:focus {
+&:hover,
+&:focus {
     color: var(--accent-color);
 }
 }
 
-
-
-.footer-list>li:not(:last-child) {
-    margin-bottom: 9px;
-}
-
-footer .contacts {
+.address-wrap__contacts {
     color: var(--footer-contact-color);
-    transition: color 250ms var(--timeng-function);
 }
 
-footer .contacts:hover,
-footer .contacts:focus {
-    color: var(--accent-color);
-}
 
-footer .join {
+.join {
     display: inline-block;
     @include font ($fs:14, $lh:1.14);
     text-transform: uppercase;
     color: var(--primary-white-color);
     margin-bottom: 20px;
-}
-
-.js-speaker {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
-    gap: 12px;
 }
 
 .newsletter {
@@ -69,33 +54,39 @@ footer .join {
     color: var(--primary-white-color);
 }
 
-.footer-input {
+.newsletter-form {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    gap: 12px;
+}
+
+.newsletter-form__input {
     padding: 15px 16px;
     width: 358px;
     height: 50px;
-
     color: var(--primary-white-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--primary-bg-color);
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &:required {
+        color: var(--primary-white-color);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: transparent;
+    }
 }
 
-.footer-input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
-}
 
-.footer-input:required {
-    color: var(--primary-white-color);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: transparent;
-}
 
-.footer__btn {
+.newsletter-form__btn {
     position: relative;
     width: 200px;
     height: 50px;
@@ -103,7 +94,7 @@ footer .join {
     @include font ($fs:16, $lh:1.88);
 }
 
-.newsletter-icons {
+.newsletter-form__icons {
     position: absolute;
     top: 0;
     right: 0;
