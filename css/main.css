@@ -755,7 +755,7 @@ ul {
   border: 0.2px solid var(--primary-white-color);
   border-radius: 2px;
 }
-.form-politic__check-hidden:checked + label > span > .checkmark {
+.form-politic__check-hidden:checked + label > span > .form-politic__checkmark {
   fill: var(--primary-white-color);
 }
 

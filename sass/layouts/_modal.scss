@@ -158,7 +158,7 @@
     border: 0.2px solid var(--primary-white-color);
     border-radius: 2px;
     
-    &>.checkmark {
+    &>.form-politic__checkmark {
     fill: var(--primary-white-color);
 }
 }
@@ -183,8 +183,6 @@
     height: 11px;
     fill: transparent;
 }
-
-
 
 .modal__submit-btn {
     display: block;
