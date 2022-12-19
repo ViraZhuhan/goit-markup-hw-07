@@ -6,8 +6,7 @@
     @extend %flex-align;
     justify-content: center;
     margin-bottom: 50px;
-
-    @include font ($fs:18, $fw:400, $lh:2, $ls:0.06);
+    @include font (18, 500, 2, 0.06);
 }
 
 .button-item {
@@ -84,8 +83,7 @@
     width: 100%;
     height: 128px;
   
-
-    @include font ($fs:18, $fw:700, $lh:1.56);
+    @include font (fs:18, fw:400, lh:1.56);
     color: var(--primary-white-color);
    
     transition: transform 250ms var(--timeng-function),
