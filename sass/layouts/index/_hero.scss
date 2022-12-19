@@ -15,7 +15,7 @@
 
 .hero__title {
     color: var(--primary-white-color);
-    @include font ($fs:44, $fw:900, $lh:1.36, $ls:0.06);
+    @include font (44, 900, 1.36, 0.06);
     max-width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;

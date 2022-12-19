@@ -15,9 +15,3 @@
     --timeng-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@mixin font ($fs:36, $fw:700, $lh:1.17, $ls:0.03) {
-    font-size: fs+px;
-    font-weight: fw;
-    line-height: lh;
-    letter-spacing: ls+em;
-}
