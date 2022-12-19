@@ -7,11 +7,11 @@
 }
 }
 
-.footer-wrap:first-child {
+.footer__wrap:first-child {
     margin-right: 70px;
 }
 
-.footer-wrap:nth-child(2) {
+.footer__wrap:nth-child(2) {
     margin-right: 93px;
 }
 
@@ -25,12 +25,13 @@
     text-decoration: none;
     @include font ($fs:14, $fw:400, $lh:1.71);
     transition: color 250ms var(--timeng-function);
-}
-
 .address:hover,
 .address:focus {
     color: var(--accent-color);
 }
+}
+
+
 
 .footer-list>li:not(:last-child) {
     margin-bottom: 9px;
