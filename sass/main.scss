@@ -12,15 +12,16 @@
 @import './components/logo';
 @import './components/title';
 @import './components/social';
+@import './components/contacts';
 
-@import './layouts/index/header';
-@import './layouts/index/hero';
-@import './layouts/index/benefits';
-@import './layouts/index/promo';
-@import './layouts/index/team';
-@import './layouts/index/clients';
-@import './layouts/index/footer';
-@import './layouts/index/modal';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/benefits';
+@import './layouts/promo';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer';
+@import './layouts/modal';
 
 @import './layouts/preview';
 

@@ -26,7 +26,7 @@
     color: var(--primary-white-color);
     font-style: normal;
     text-decoration: none;
-    @include font ($fs:14, $fw:400, $lh:1.71);
+    @include font ();
     transition: color 250ms var(--timeng-function);
 &:hover,
 &:focus {
@@ -41,7 +41,7 @@
 
 .join {
     display: inline-block;
-    @include font ($fs:14, $lh:1.14);
+    @include font ($fw:700, $lh:1.14);
     text-transform: uppercase;
     color: var(--primary-white-color);
     margin-bottom: 20px;
@@ -49,7 +49,7 @@
 
 .newsletter {
     margin-bottom: 20px;
-    @include font ($fs:14,$lh:1.14);
+    @include font ($fw:700, $lh:1.14);
     text-transform: uppercase;
     color: var(--primary-white-color);
 }
@@ -91,7 +91,7 @@
     width: 200px;
     height: 50px;
     padding: 10px 62px 10px 28px;
-    @include font ($fs:16, $lh:1.88);
+    // @include font ($fs:16, $lh:1.88);
 }
 
 .newsletter-form__icons {

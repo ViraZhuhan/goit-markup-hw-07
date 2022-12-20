@@ -22,7 +22,7 @@
     width: 100%;
     background: rgba(47, 48, 58, 0.8);
     padding: 27px 0;
-    @include font ($fs:146, $lh:1.14);
+    @include font ($fw:700, $lh:1.14);
     text-align: center;
     text-transform: uppercase;
     color: var(--primary-white-color);

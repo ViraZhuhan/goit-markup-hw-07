@@ -31,7 +31,7 @@
 }
 
 .card__text {
-    @include font ($fs:16, $fw:400, $lh:1.19);
+    @include font ($fs:16, $lh:1.19);
     text-align: center;
     color: var(--title-text-color);
     margin-bottom: 16px;

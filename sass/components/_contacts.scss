@@ -1,14 +1,13 @@
 .contacts__list {
     display: flex;
     gap: 30px;
-    margin-left: 315px;
-    @include font (14, 500, 1.14, 0.02);
 }
 
 .contacts__link {
     color: var(--title-text-color);
     @extend %flex-align;
     justify-content: center;
+    @include font (14, 500, 1.14, 0.02);
     transition: color 250ms var(--timeng-function);
     &:hover,
     &:focus {

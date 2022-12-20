@@ -23,11 +23,11 @@
 }
 
 .wrapper__subtitle {
-    @include font ($fs: 14, $lh: 1.14);
+    @include font ($fw:700, $lh:1.14);
 }
 
 .wrapper__text {
     margin-top: 10px;
     color: var(--title-text-color);
-    letter-spacing: 0.03em;
+    @include font ();
 }

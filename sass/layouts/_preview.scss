@@ -6,13 +6,15 @@
     @extend %flex-align;
     justify-content: center;
     margin-bottom: 50px;
-    @include font (18, 500, 2, 0.06);
+    &>li:not(:last-child) {
+        margin-right: 8px;
+    }
 }
 
 .button-item {
     padding: 6px 22px;
 
-    @include font (16, 500, 1.63, null);
+    @include font (16, 500, 1.63, 0.03);
     text-align: center;
     color: var(--primary-text-color);
 
@@ -31,14 +33,7 @@
         0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--primary-white-color);
 }
-
-
-            }
-
-.preview-button>li:not(:last-child) {
-    margin-right: 8px;
 }
-
 
 .preview-list {
     display: flex;
@@ -62,8 +57,26 @@
     position: relative;
     overflow: hidden;
     width: 370px;
+}
 
- 
+
+
+.preview-subtext {
+    position: absolute;
+    right: 0;
+    bottom: -45%;
+   
+    padding: 63px 24px;
+    margin: 0 auto;
+    width: 100%;
+  
+    @include font ($fs:18, $lh:1.56);
+    color: var(--primary-white-color);
+   
+    transition: transform 250ms var(--timeng-function),
+        background-color 250ms var(--timeng-function),
+        opacity 250ms var(--timeng-function);
+    opacity: 0;
 }
 
 .preview-item:hover .preview-subtext,
@@ -71,25 +84,6 @@
     opacity: 1;
     transform: translateY(-100%);
     background-color: rgba(33, 150, 243, 0.9);
-}
-
-.preview-subtext {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-
-    padding: 63px 24px;
-    margin: 0 auto;
-    width: 100%;
-    height: 128px;
-  
-    @include font ($fs:18, $fw:400, $lh:1.56);
-    color: var(--primary-white-color);
-   
-    transition: transform 250ms var(--timeng-function),
-        background-color 250ms var(--timeng-function),
-        opacity 250ms var(--timeng-function);
-    opacity: 0;
 }
 
 .title-text-wrap {
@@ -103,16 +97,11 @@
     margin-bottom: 4px;
 
     color: var(--primary-text-color);
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font ($fs:18, $fw:700, $lh:2, $ls:0.06);
     text-align: start;
 }
 
 .preview-text {
     color: var(--title-text-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.03em;
+    @include font ($fs:16,$lh:1.88);
 }
