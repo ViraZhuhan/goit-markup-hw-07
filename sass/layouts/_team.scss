@@ -6,6 +6,10 @@
     }
 }
 
+.team__title {
+    margin-bottom: 50px;  
+  }
+
 .card__list {
     display: flex;
     gap: 30px;
@@ -35,6 +39,10 @@
     text-align: center;
     color: var(--title-text-color);
     margin-bottom: 16px;
+}
+
+.team__social-items {
+    margin-bottom: 30px;
 }
 
 
