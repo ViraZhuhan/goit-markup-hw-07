@@ -23,7 +23,7 @@
 }
 
 .wrapper__subtitle {
-    @include font ($fs: 14, $lh: 1.14)
+    @include font ($fs: 14, $lh: 1.14);
 }
 
 .wrapper__text {

@@ -1,7 +1,7 @@
 .logo {
     display: block;
-    font-family: Raleway, sans-serif;
-    @include font (26, 1.19);
+    font-family: var(--font-logo);
+    @include font-logo();
     text-decoration: none;
     margin-right: 93px;
     padding-top: 24px;

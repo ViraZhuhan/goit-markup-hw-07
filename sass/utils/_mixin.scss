@@ -1,7 +1,21 @@
-@mixin font($fs: 36, $fw: 700, $lh: 1.17, $ls: 0.03) {
-    font-size: fs + px;
-    font-weight: fw;
-    line-height: lh;
-    letter-spacing: ls + em;
+@mixin font($fs, $fw, $lh, $ls) {
+    font-size: $fs + px;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls + em;
+}
+
+@mixin font-title() {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+@mixin font-logo() {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 
