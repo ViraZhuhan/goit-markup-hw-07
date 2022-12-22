@@ -74,11 +74,11 @@
   
     @include font ($fs:18, $lh:1.56);
     color: var(--primary-white-color);
-   
+    opacity: 0;
+
     transition: transform 250ms var(--timeng-function),
         background-color 250ms var(--timeng-function),
         opacity 250ms var(--timeng-function);
-        opacity: 0;
 }
 
 .product-wrapper__item:hover .product-wrapper__subtext,
